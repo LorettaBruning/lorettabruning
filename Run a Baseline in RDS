@@ -1,0 +1,75 @@
+How to Run a Baseline in a Relational Database Service (RDS)
+
+Purpose
+
+The purpose of this document is to specify the steps a user must follow to run a Baseline in a Relational Database Service (RDS). 
+
+Scope
+
+A Relational Database is a database that stores and provides access to data points that are related to one another. Relational Databases are based on relational models with straightforward representation of data in tables. Each row in the table is a record with a unique ID called the key. 
+Versioning the database begins with a Baseline. This Baseline gives the user a starting point in RDS. Baselining allows developers to put the code into RDS so Salesforce will work. Many of the APIs point to RDS and not to the corporate database. 
+
+Assumptions
+
+The descriptions outlined in this document assume the end user is familiar with the following:
+-Users must have access to the Dimensions and necessary permissions to run scripts to generate the files.
+-This is only one example to run a baseline in RDS, the user will have to determine their own preference.
+-The environment for the scripts must be run in that environment.
+
+Instructions
+
+Dimensions is a repository that is used by the corporation. The baseline already exists and is built with all the files. 
+1. Access Dimensions. 
+2. Retrieve the files from Dimensions. 
+3. Open baselines in Dimensions.
+4. Select the baseline from the Baseline Catalog.  
+  a. There are usually two files in the catalog that include either:
+      i. MuleSoft interface (aka wrappers) that talk to the code compiled under the MULESOFTA schema or 
+      ii. Core code that contains 99% of the business logic compiled under the schemas. 
+5. Retrieve all the files by selecting the baseline, this retrieves all items created for that baseline. 
+  a. Once selected, a "Get (Multiple Items)" modal will prompt. 
+    i. Select the folder locaton of where the files should be sent. 
+NOTE: It is recommended to place extracted files in a "Baseline" folder on the Share Drive that has separate folders for all the different Baselines. 
+    ii. Select OK to extract the files and place them in the designated location. 
+NOTE: The extracted files will save in the same folder structure that is in Dimensions. 
+NOTE: The batch interface will contain the three files that match the file structure. 
+NOTE: The next following steps are by user preference. These steps are what the lead ORA developer uses to create a command line statement. 
+6. Select "Oracle" in the file path. 
+7. Select "Corporate" in the file path. 
+8. Select the release candidate (RC) and release 1 (R1) from the file folder list. 
+9. Select "runme.sql".
+NOTE: The run me SQL consists of all the files that are in this release. The run me SQL is loosely based on the compile of all script that is part of the baseline. The run me SQL is added logically. 
+10. Select the "corporate" folder.
+11. Select release scripts by selecting "rel_scripts". 
+NOTE: When a baseline is created, these are the release scripts that are also created. 
+12. Select the compile all SQL, "corporate_compile_all.sql". 
+13. Select "Send to" to send the SQL to a predetermined location. 
+14. Select all the scripts and copy them to this same folder. 
+15. Select all the run statements and point them to this folder. 
+16. Execute the files. 
+NOTE: Do NOT load data, only load objects (e.g., types, packages, functions, and procedures). All data loads happen when the corporate baseline runs. This ensures that in corporate all the data loads and the baselines run. A replication picks up all the data and moves it into RDS. 
+NOTE: RDS synchronized packet scripts are not used due to limited resources and time to verify that the process works. 
+17. Verify which environment the baseline is going to within the script. 
+18. Baseline object have to run under the corporate schema, so alter session by pointing to that. 
+19. Move over to the MuleSoft schema and it moves anything owned by MS corporate. 
+NOTE: There are no scripts that will verify the objects, synonyms, grants, etc.are present in the file. 
+20. Perform a manual check that the grant synonym scripts are part of the release script baseline. 
+21. Verify what objects, grants, synonyms, etc. are missing. OR write your own scripts for the objects, grants, synonyms, etc. into RDS. OR go through the list of files one by one. 
+  a. One-by-one approach:
+    i. Go into the "batch" file.
+    ii. Go into the interface folder. 
+    iii. Grab the file. 
+    iv. Either open it, cut and paste, and excute it in a SQL window OR create a "WE CALL" to it. 
+  b. DOS Process approach:
+      i. Perform a directory listing on the command line with subfolders. 
+      ii. Extract the full list of all the files. 
+      iii. Add the @ in front of each one. 
+NOTE: This requires putting the files in order for them to run in. The data object has to run before the return payment because it is referencing that object. 
+NOTE: If everything is ran it will be invalid and requires a compile all to recompile everything again. 
+      iv. Verify the corporate schema is set when running. 
+      v. Change MuleSoft corporate whenever running the MuleSoft path objects. 
+      vi. Go into MS corporate for the synonyms. 
+NOTE: Be aware that if a corporate report pops up, it will be in its own environment. 
+NOTE: New objects need the synonym and grant added to the script because they are new and did not already exist. The new objects are added during the release. 
+22. Read the script. 
+23. Bounce the API and done. 

@@ -1,8 +1,7 @@
 <!--Arbortext, Inc., 1988-2013, v.4002-->
-<!DOCTYPE DOCNAVSEAC2 PUBLIC "-//USA-DOD//DTD NAVSEA ETM Class 2 REV C VER 1.2 970930//EN" [
-<!ENTITY test SYSTEM "test.tif" NDATA tif>
+<!DOCTYPE PUBLIC 
 ]>
-<docnavseac2>
+<doc2>
 <front>
 <idinfo>
 <pubno><docno>TMIN</docno></pubno>
@@ -21,19 +20,16 @@ USE A NUMBER ONLY IN THE VOLNUM TAG.
 <stitle>SECONDARY TITLE GOES HERE</stitle>
 </titleblk>
 <notice><supersednotice>
-<para>THIS MANUAL SUPERSEDES xxxx, DATED 99 XXX 9999, AND ALL CHANGES
-THERETO.</para>
+<para>THIS MANUAL SUPERSEDES xxxx, DATED 99 XXX 9999, AND ALL CHANGES THERETO.</para>
 </supersednotice><controlledbyone>
-<para>UNITED STATES NAVY</para>
+<para>ENTITY</para>
 </controlledbyone><controlledbytwo>
-<para>NSWCPD</para>
-</controlledbytwo><cuicategory cat="cti-expt"><distributionstatement
-type="d" distdate="01/01/2002" distcode="NSWC PHILADELPHIA, CODE
-314"></distributionstatement><cuipoc>
-<para> NAVAL SURFACE WARFARE CENTER PHILADELPHIA, CODE 314 (NSWCPD_Tech_Manual.fct@navy.mil)
+<para>Publisher</para>
+</controlledbytwo><cuicategory cat="cti-expt"><distributionstatement type="x" distdate="mm/dd/yyyy" distcode="XXX, CODE ###"></distributionstatement><cuipoc>
+<para> COMPANY, DISTRIBUTION CODE, (email)
 </para>
 </cuipoc><authoritynotice>
-<para>PUBLISHED BY DIRECTION OF COMMANDER, NAVAL SEA SYSTEMS COMMAND</para>
+<para>PUBLISHED BY </para>
 </authoritynotice></notice>
 <pubdate>DD MMM YYYY</pubdate>
 <chgnum>THIS TAG CAN BE DELETED. IF USED, IT MUST MATCH REV.</chgnum>
@@ -57,9 +53,7 @@ id="ror1">
 <row>
 <entry align="center">X<?GenerateChangeList></entry>
 <entry align="center">DD MMM YYYY</entry>
-<entry>INITIAL ISSUE.<brk>NSWCPD<brk>THIS MANUAL WAS UPDATED TO REFLECT
-CURRENT NAVSEA DIGITIZATION STANDARDS. NO TECHNICAL CONTENT WAS CHANGED.<brk><brk>DESCRIPTION
-OF CHANGE.<brk>THE FOLLOWING WAS CHANGED:<brk><?CHANGELIST=1></entry>
+<entry>INITIAL ISSUE.<brk>THIS MANUAL WAS UPDATED TO REFLECT CURRENT DIGITIZATION STANDARDS. NO TECHNICAL CONTENT WAS CHANGED.<brk><brk>DESCRIPTION OF CHANGE.<brk>THE FOLLOWING WAS CHANGED:<brk><?CHANGELIST=1></entry>
 </row>
 </tbody>
 </tgroup>
@@ -71,34 +65,22 @@ display="inline">
 <tbody>
 <row>
 <entry align="center"><note>
-<para>FOR OPTIMAL VIEWING OF THIS TECHNICAL MANUAL THE PAGE DISPLAY
-IN ADOBE ACROBAT READER SHOULD BE SINGLE PAGE VIEW. CONTINUOUS PAGE
-DISPLAY CAN CAUSE PROBLEMS WITH LINK REFERENCES AND THE BOOKMARKS.</para>
+<para>FOR OPTIMAL VIEWING OF THIS TECHNICAL MANUAL THE PAGE DISPLAY IN ADOBE ACROBAT READER SHOULD BE SINGLE PAGE VIEW. CONTINUOUS PAGE DISPLAY CAN CAUSE PROBLEMS WITH LINK REFERENCES AND THE BOOKMARKS.</para>
 </note></entry>
 </row>
 </tbody>
 </tgroup>
 </chart></chgrec>
 <foreword tocentry="0" id="i5">
-<para>This technical manual contains description, operation, maintenance,
-troubleshooting, installation, repair, and parts list information
-for the (NAME OF EQUIPMENT). This technical manual is intended for
-use by personnel operating and maintaining the equipment described
-herein.</para>
+<para>This technical manual contains description, operation, maintenance, troubleshooting, installation, repair, and parts list information for the (NAME OF EQUIPMENT). This technical manual is intended for use by personnel operating and maintaining the equipment described herein.</para>
 <para>This manual consists of eight chapters as follows:<randlist>
-<item><xref xrefid="c1" xidtype="text">Chapter 1</xref> - General
-Information</item>
+<item><xref xrefid="c1" xidtype="text">Chapter 1</xref> - General Information</item>
 <item><xref xrefid="c2" xidtype="text">Chapter 2</xref> - Operation</item>
-<item><xref xrefid="c3" xidtype="text">Chapter 3</xref> - Functional
-Description</item>
-<item><xref xrefid="c4" xidtype="text">Chapter 4</xref> - Scheduled
-Maintenance</item>
-<item><xref xrefid="c5" xidtype="text">Chapter 5</xref> - Troubleshooting
-</item>
-<item><xref xrefid="c6" xidtype="text">Chapter 6</xref> - Corrective
-Maintenance</item>
-<item><xref xrefid="c7" xidtype="text">Chapter 7</xref> - Illustrated
-Parts Breakdown</item>
+<item><xref xrefid="c3" xidtype="text">Chapter 3</xref> - Functional Description</item>
+<item><xref xrefid="c4" xidtype="text">Chapter 4</xref> - Scheduled Maintenance</item>
+<item><xref xrefid="c5" xidtype="text">Chapter 5</xref> - Troubleshooting </item>
+<item><xref xrefid="c6" xidtype="text">Chapter 6</xref> - Corrective Maintenance</item>
+<item><xref xrefid="c7" xidtype="text">Chapter 7</xref> - Illustrated Parts Breakdown</item>
 <item><xref xrefid="c8" xidtype="text">Chapter 8</xref> - Installation</item>
 </randlist></para>
 <databrk>
@@ -106,105 +88,39 @@ Parts Breakdown</item>
 </foreword>
 <contents><tablelist><illuslist><safesum tocentry="0" id="c00fs001">
 <para><title>GENERAL SAFETY NOTICES</title></para>
-<para>The following general safety notices supplement the specific
-warnings and cautions appearing elsewhere in this manual.  They are
-recommended precautions that must be understood and applied during
-operation and maintenance of the equipment covered herein.  Should
-situations arise that are not covered in the general or specific safety
-precautions, the Commanding Officer or other authority will issue
-orders as deemed necessary to cover the situation.  No work shall
-be undertaken on energized equipment or circuits until approval of
-the Commanding Officer is obtained, and then only in accordance with
-Naval Ships&rsquo; Technical Manual (NSTM) S9086-KC-STM-010/Chapter
-300.</para>
+<para>The following general safety notices supplement the specific warnings and cautions appearing elsewhere in this manual.  They are recommended precautions that must be understood and applied during operation and maintenance of the equipment covered herein. Should situations arise that are not covered in the general or specific safety precautions, the (name of authority) will issue orders as deemed necessary to cover the situation.  No work shall be undertaken on energized equipment or circuits until approval of the authority is obtained, and then only in accordance with (reference document).</para>
 <para><title>DO NOT REPAIR OR ADJUST ALONE</title></para>
-<para>Under no circumstances shall repair or adjustment of energized
-equipment be attempted alone.  The immediate presence of someone capable
-of rendering first aid is required.  Before making adjustments, be
-sure to protect against grounding.  If possible, adjustments should
-be made with one hand, with the other hand free and clear of equipment.
- Even when power has been removed from equipment circuits, dangerous
-potentials may still exist due to retention of charges by capacitors.
- Circuits must be grounded and all capacitors discharged prior to
-attempting repairs.</para>
+<para>Under no circumstances shall repair or adjustment of energized equipment be attempted alone.  The immediate presence of someone capable of rendering first aid is required.  Before making adjustments, be sure to protect against grounding.  If possible, adjustments should be made with one hand, with the other hand free and clear of equipment.  Even when power has been removed from equipment circuits, dangerous potentials may still exist due to retention of charges by capacitors.  Circuits must be grounded and all capacitors discharged prior to attempting repairs.</para>
 <para><title>TEST EQUIPMENT</title></para>
-<para>Make certain test equipment is in good condition.  If a metal-cased
-test meter must be held, ground the case of the meter before starting
-measurement. Do not touch live equipment or personnel working on live
-equipment while holding a test meter.  Some types of measuring devices
-should not be grounded; these devices should not be held when taking
-measurements.</para>
+<para>Make certain test equipment is in good condition.  If a metal-cased test meter must be held, ground the case of the meter before starting measurement. Do not touch live equipment or personnel working on live equipment while holding a test meter.  Some types of measuring devices should not be grounded; these devices should not be held when taking measurements.</para>
 <para><title>INTERLOCKS-SAFETY DEVICES</title></para>
-<para>Interlocks are provided for safety of personnel and equipment
-and should be used only for the purpose intended.  Never tamper with
-or render ineffective any safety device, interlock, ground strap or
-similar device intended to protect operators or the equipment without
-specific approval of the Commanding Officer. Do not depend solely
-upon interlocks for protection. Whenever possible, disconnect power
-at the distribution source.</para>
+<para>Interlocks are provided for safety of personnel and equipment and should be used only for the purpose intended.  Never tamper with or render ineffective any safety device, interlock, ground strap or similar device intended to protect operators or the equipment without specific approval of the authority. Do not depend solely upon interlocks for protection. Whenever possible, disconnect power at the distribution source.</para>
 <para><title>MOVING EQUIPMENT</title></para>
-<para>Personnel shall remain clear of moving equipment.  If equipment
-requires adjustment while in motion, a safety watch shall be posted.
-The safety watch shall have a full view of the operations being performed,
-and immediate access to controls capable of stopping equipment motion.</para>
+<para>Personnel shall remain clear of moving equipment.  If equipment requires adjustment while in motion, a safety watch shall be posted. The safety watch shall have a full view of the operations being performed, and immediate access to controls capable of stopping equipment motion.</para>
 <para><title>FIRST AID</title></para>
-<para>An injury, no matter how slight, shall never go unattended.
- Always obtain first aid or medical attention immediately, and file
-an injury report in accordance with OPNAVINST 5102.1 series, subj:
-Mishap Investigation and Reporting.</para>
+<para>An injury, no matter how slight, shall never go unattended. Always obtain first aid or medical attention immediately, and file an injury report in accordance with (regulation). </para>
 <databrk>
 <para><title>RESUSCITATION</title></para>
-<para>Personnel working with or near high voltage shall be familiar
-with approved methods of resuscitation. Should someone be injured
-and stop breathing, begin resuscitation immediately.  A delay could
-cost the victim's life.  Resuscitation procedures shall be posted
-in all electrically hazardous areas.</para>
+<para>Personnel working with or near high voltage shall be familiar with approved methods of resuscitation. Should someone be injured and stop breathing, begin resuscitation immediately.  A delay could cost the victim's life.  Resuscitation procedures shall be posted in all electrically hazardous areas.</para>
 <para><title>GENERAL PRECAUTIONS</title></para>
-<para>The following general precautions are to be observed at all
-times.<seqlist>
-<item id="c00fs001l001" label="1.">Install and ground all electrical
-components associated with this system/equipment in accordance with
-applicable Navy regulations and approved shipboard practices.</item>
-<item id="c00fs001l002" label="2.">Ensure that all maintenance operations
-comply with Navy Occupational Safety and Health (NAVOSH) Program Manual
-for Forces Afloat, OPNAVINST 5100.19 series.</item>
-<item id="c00fs001l003" label="3.">Observe precautions set forth in
-NSTM S9086-KC-STM-010/Chapter 300 with respect to electrical equipment
-and circuits.</item>
-<item id="c00fs001l004" label="4.">Ensure that protective guards and
-shutdown devices are properly installed and maintained around rotating
-parts of machinery and high voltage sources.</item>
-<item id="c00fs001l005" label="5.">Do not wear loose clothing while
-working around rotating parts of machinery.</item>
-<item id="c00fs001l006" label="6.">Ensure that special precautionary
-measures are employed to prevent applying power to the system/equipment
-any time maintenance work is in progress.</item>
-<item id="c00fs001l007" label="7.">Do not make any unauthorized alterations
-to equipment or components.</item>
-<item id="c00fs001l008" label="8.">Before working on electrical system/equipment,
-check with voltmeter to ensure that system is not energized.</item>
-<item id="c00fs001l009" label="9.">Consider all circuits not known
-to be "dead," "live" and dangerous at all times.</item>
-<item id="c00fs001l010" label="10.">When working near electricity,
-do not use metal rules, flashlights, metallic pencils, or any other
-objects having exposed conducting material.</item>
-<item id="c00fs001l019" label="11.">De-energize all equipment before
-connecting or disconnecting meters or test leads.</item>
-<item id="c00fs001l012" label="12.">When connecting a meter to terminals
-for measurement, use range higher than expected voltage.</item>
-<item id="c00fs001l013" label="13.">Before operating equipment or
-performing any tests or measurements, ensure that frames of all motors
-and starter panels are securely grounded.</item>
-<item id="c00fs001l014" label="14.">Ensure that area is well-ventilated
-when using cleaning compound or solvent.  Avoid prolonged breathing
-of fumes and compound or solvent contact with skin or eyes.</item>
+<para>The following general precautions are to be observed at all times.<seqlist>
+<item id="c00fs001l001" label="1.">Install and ground all electrical components associated with this system/equipment.</item>
+<item id="c00fs001l002" label="2.">Ensure that all maintenance operations comply with Occupational Safety and Health Program Manual.</item>
+<item id="c00fs001l003" label="3.">Observe precautions set forth in (document) with respect to electrical equipment and circuits.</item>
+<item id="c00fs001l004" label="4.">Ensure that protective guards and shutdown devices are properly installed and maintained around rotating parts of machinery and high voltage sources.</item>
+<item id="c00fs001l005" label="5.">Do not wear loose clothing while working around rotating parts of machinery.</item>
+<item id="c00fs001l006" label="6.">Ensure that special precautionary measures are employed to prevent applying power to the system/equipment any time maintenance work is in progress.</item>
+<item id="c00fs001l007" label="7.">Do not make any unauthorized alterations to equipment or components.</item>
+<item id="c00fs001l008" label="8.">Before working on electrical system/equipment, check with voltmeter to ensure that system is not energized.</item>
+<item id="c00fs001l009" label="9.">Consider all circuits not known to be "dead," "live" and dangerous at all times.</item>
+<item id="c00fs001l010" label="10.">When working near electricity, do not use metal rules, flashlights, metallic pencils, or any other objects having exposed conducting material.</item>
+<item id="c00fs001l019" label="11.">De-energize all equipment before connecting or disconnecting meters or test leads.</item>
+<item id="c00fs001l012" label="12.">When connecting a meter to terminals for measurement, use range higher than expected voltage.</item> 
+<item id="c00fs001l013" label="13.">Before operating equipment or performing any tests or measurements, ensure that frames of all motors and starter panels are securely grounded.</item>
+<item id="c00fs001l014" label="14.">Ensure that area is well-ventilated when using cleaning compound or solvent.  Avoid prolonged breathing of fumes and compound or solvent contact with skin or eyes.</item>
 </seqlist></para>
 <para><title>WARNINGS AND CAUTIONS</title></para>
-<para>Specific warnings and cautions applying to the system/equipment
-covered by this manual are summarized below. These warnings and cautions
-appear elsewhere in the manual following paragraph headings and immediately
-preceding the text to which they apply.  They are repeated here for
-emphasis.</para>
+<para>Specific warnings and cautions applying to the system/equipment covered by this manual are summarized below. These warnings and cautions appear elsewhere in the manual following paragraph headings and immediately preceding the text to which they apply.  They are repeated here for emphasis.</para>
 </safesum><fsection id="c00fs002"></fsection>
 </front>
 <body>
@@ -240,24 +156,11 @@ emphasis.</para>
 <title>SCHEDULED MAINTENANCE</title>
 <para0 id="p4-1" label="4-1">
 <title>INTRODUCTION.</title>
-<para> Scheduled maintenance instructions are furnished in the Planned
-Maintenance System (PMS). When conflicts exist between this manual
-and the PMS, the PMS documentation shall take precedence. Such conflicts
-should be reported immediately, in accordance with maintenance procedures,
-on one of the FEEDBACK Reports found in the back of this manual. </para>
+<para> Scheduled maintenance instructions are furnished in the Planned Maintenance System (PMS). When conflicts exist between this manual and the PMS, the PMS documentation shall take precedence. Such conflicts should be reported immediately, in accordance with maintenance procedures, on one of the FEEDBACK Reports found in the back of this manual. </para>
 </para0>
 <para0 id="p4-2" label="4-2">
 <title> PLANNED MAINTENANCE SYSTEM. </title>
-<para> Recommended preventive maintenance procedures to be performed
-on a scheduled basis are provided in PMS documentation. OPNAVINST
-4790.4 describes the PMS, and covers departmental and work center
-record keeping, as well as the Maintenance Index Page (MIP) and Maintenance
-Requirement Cards (MRCs). The MRCs cover scheduled/conditional inspection,
-and lubrication procedures for (INSERT NAME OF SYSTEM OR EQUIPMENT
-BEING COVERED HERE). The extensive and comprehensive scheduled maintenance
-information provided by the MRCs precludes the need for detailed coverage
-within this manual. Specific corrective maintenance requirements (adjustments,
-alignment, and repair) are covered as part of this manual. </para>
+<para> Recommended preventive maintenance procedures to be performed on a scheduled basis are provided in PMS documentation. Documentation XXX describes the PMS, and covers departmental and work center record keeping, as well as the Maintenance Index Page (MIP) and Maintenance Requirement Cards (MRCs). The MRCs cover scheduled/conditional inspection, and lubrication procedures for (INSERT NAME OF SYSTEM OR EQUIPMENT BEING COVERED HERE). The extensive and comprehensive scheduled maintenance information provided by the MRCs precludes the need for detailed coverage within this manual. Specific corrective maintenance requirements (adjustments, alignment, and repair) are covered as part of this manual. </para>
 </para0>
 </chapter>
 <chapter id="c5" label="5">
@@ -284,4 +187,10 @@ alignment, and repair) are covered as part of this manual. </para>
 <title>INTRODUCTION.</title>
 </para0>
 </chapter>
-</body></docnavseac2>
+</body>
+<rear>
+<appendix vendor="1" vendpg="1" vendhd="1" id="aa" label="A">
+<title>APPENDIX A </title>
+<para><?insertPDF=appendix-a pages=38 startPage=1></para>
+</appendix>
+<rear></doc2>

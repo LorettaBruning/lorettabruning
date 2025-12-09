@@ -1,0 +1,232 @@
+#%RAML 1.0 DataType
+description: tbd.raml specification
+properties:
+  PTCPNT_VET_ID:
+    type: string
+    minLength: 1
+    maxLength: 15
+      
+  PTCPNT_BENE_ID:
+    type: string
+    minLength: 1
+    maxLength: 15
+       
+  PTCPNT_RECIP_ID:
+    type: string
+    minLength: 1
+    maxLength: 15
+      
+  VET_SSN_NBR:
+    type: string
+    minLength: 0
+    maxLength: 9
+    
+  BENE_SSN_NBR:
+    type: string
+    minLength: 0
+    maxLength: 9
+    
+  VENDOR_NM:
+    type: string
+    minLength: 0
+    maxLength: 50
+    
+  EDU_FCLTY_CD:
+    type: string
+    minLength: 1
+    maxLength: 8
+    
+  FILE_NBR:
+    type: string
+    minLength: 0
+    maxLength: 9
+    
+  PAYEE_TYPE_CD:
+    type: string
+    minLength: 1
+    maxLength: 12
+      
+  ENTLMT_SRC:
+    type: string
+    minLength: 1
+    maxLength: 50
+    
+  RCVBL_TYPE_CD:
+    type: string
+    minLength: 1
+    maxLength: 12
+    
+  RCVBL_TRAN_NBR: 
+    type: number
+    minLenth: 1
+    maxLength: 15
+        
+  FINCL_BUSNS_TRAN_ID:
+    type: number
+    minLength: 1
+    maxLength: 15
+
+  CARS_TRAN_CD:
+    type: string
+    minLength: 1
+    maxLength: 12
+    
+  BUSNS_TRAN_TYPE_CD:
+    type: string
+    minLength: 1
+    maxLength: 12
+    
+  RCVBL_COLCTN_STATUS_TYPE_CD:
+    type: string
+    minLength: 1
+    maxLength: 12
+    
+  RCVBL_ID:
+    type: string
+    maxLength: 15
+      
+  BAL_AMT:
+    type: string
+    maxLength: 16
+      
+  DSCVRY_DT:
+    type: string
+    minLength: 0
+    maxLength: 8
+     
+  EFCTV_DT:
+    type: string
+    minLength: 0
+    maxLength: 8
+     
+  END_DT:
+    type: string
+    minLength: 0
+    maxLength: 8
+     
+  RCVBL_REASON_TYPE_CD:
+    type: string
+    maxLength: 12
+       
+  STATUS_TYPE_CD:
+    type: string
+    minLength: 1
+    maxLength: 12
+    
+   PGM_TYPE_CD: 
+     type: string
+     minLengh: 0
+     maxLength: 12
+       
+   AWARD_TYPE_CD:
+     type: string
+     minLength: 0
+     maxLength: 12
+     
+  JRN_LCTN_ID:
+    type: string
+    minLength: 1
+    maxLength: 4
+    
+  POA_CD:
+    type: string
+    minLength: 0
+    maxLength: 3
+
+  CP_AWARD_TYPE_CD:
+     type: string
+     minLength: 0
+     maxLength: 12
+
+  CP_AWRD_STATUS_TYPE_CD:
+    type: string
+     minLength: 0
+     maxLength: 12
+
+  INT_BAL_AMT:
+    type: string
+    minLength: 1
+    maxLength: 15
+    multipleOf: 0.01
+    
+  INT_CMPUTN_DT:
+    type: date
+    minLength: 0
+    maxLength: 14
+    
+  TRAN_DT:
+    type: string
+    minLength: 14
+    maxLength: 14
+        
+  AUDIT_RELATD_IND:
+    type: string
+    minLength: 0
+    maxLength: 1
+    
+  ACNT_RCBL_INC_DEC:
+    type: string
+    minLength: 1
+    maxLength: 15
+    multipleOf: 0.01
+    
+  INT_AMT_INC_DEC:
+    type: string
+    minLength: 1
+    maxLength: 15
+    multipleOf: 0.01
+    
+  AMT_TO_DED: 
+    type: string
+    minLength: 1
+    maxLength: 15
+    multipleOf: 0.01
+    
+  ADMSTV_COST_AMT:
+    type: string
+    minLength: 1
+    maxLength: 15
+    multipleOf: 0.01
+    
+  OFFSET_PLAN_TYPE_CD:
+    type: string
+    minLength: 1
+    maxLength: 12
+    
+  OFFSET_PGM_TYPE_CD: 
+    type: string
+    minLength: 0
+    maxLength: 12
+    
+  OFFSET_TRAN_DT:
+    type: string
+    minLength: 1
+    maxLength: 14
+    
+  OFFSET_EFCTV_DT: 
+    type: string
+    minLength: 1
+    maxLength: 14
+    
+  OFFSET_END_DT:
+    type: string
+    minLength: 0
+    maxLength: 14
+    
+  OFFSET_PLAN_AMT:
+    type: string
+    minLength: 1
+    maxLength: 15
+    multipleOf: 0.01
+    
+  OFFSET_PLAN_STATUS_TYPE_CD:
+    type: string
+    minLength: 0
+    maxLength: 12
+
+   OFFSET_PLAN_ID:
+    type: string
+    minLength: 0
+    maxLength: 15
+    
+}

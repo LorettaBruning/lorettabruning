@@ -1,6 +1,6 @@
 #  Loretta Bruning 
 ##  Summary Portfolio
-Samples[(] **Email:** [(llm961s@gmail.com)] **LinkedIn:** [(https://wwww.linkedin.com/in/loretta-bruning-621)]
+**Samples** [Log Critical Bug SOP]( **Email:** [(llm961s@gmail.com)] **LinkedIn:** [(https://wwww.linkedin.com/in/loretta-bruning-621)]
 
 ##  Professional Summary
 Highly experienced Technical Writer and Program Delivery professional with 7+ years of specialized experience in **IT Technical Writing** and **Executive Communication** within high-compliance federal environments (DoD/VA). Expertise in synthesizing complex IT concepts (Agile, MuleSoft, Salesforce) into clear, compliant documentation (SOPs, User Guides, Release Notes). Proven proficiency with the full documentation toolchain: **GitHub, Confluence, Jira, and S1000D/Arbortext**. Ready to support cloud-based software development with rigorous QA and 508 accessibility standards.

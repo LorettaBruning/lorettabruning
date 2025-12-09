@@ -1,0 +1,64 @@
+Standard Operating Procedure (SOP) for Logging a Critical Bug in the Agile Workflow
+
+Document Version: 1.0
+Date Created: December 9, 2025
+Scope: Applicable to all Development, QA, and Product teams.
+Tools Used: Jira, Confluence, Draw.io (Diagramming)
+
+1. Purpose
+
+This SOP ensures all critical, production-halting software defects are identified, prioritized, and escalated immediately using a standardized process, minimizing downtime and maintaining service availability.
+
+2. Definitions
+
+Term
+
+Definition
+
+Critical Bug
+
+A defect in production that causes a complete system failure, data loss, or significant security vulnerability (Severity 1).
+
+Triage Team
+
+The designated on-call team responsible for initial investigation (L1/L2 Support).
+
+SME
+
+Subject Matter Expert (Developer or System Architect).
+
+3. Procedure
+
+3.1. Discovery and Initial Triage (L1 Support)
+
+Confirm Criticality: The discoverer confirms the issue is a Severity 1 Critical Bug (System Down/Security Breach).
+
+Immediate Notification: The discoverer notifies the Triage Team Lead (via Slack #critical-alerts) and the relevant Product Manager within 5 minutes of confirmation.
+
+Jira Ticket Creation: The discoverer creates a new Jira ticket with the following mandatory fields:
+
+Project: [PROD_ISSUE]
+
+Issue Type: Bug
+
+Priority: Highest
+
+Summary: [CRITICAL] System X - Brief description of failure.
+
+Description: Include Steps to Reproduce (STR), Expected Result, and Actual Result.
+
+3.2. Investigation and Assignment (Triage Team)
+
+SME Identification: The Triage Team Lead reviews the ticket and identifies the core component owner (SME).
+
+Assignment: The ticket is assigned to the component SME within 15 minutes of creation.
+
+Impact Analysis: The SME updates the Jira ticket with an assessment of system impact and potential remediation paths.
+
+3.3. Resolution and Documentation
+
+Code Fix & QA: The SME commits the fix to the emergency branch and works with QA to confirm the fix addresses the issue without new regressions.
+
+Release Notes Draft: The Technical Writer (using Confluence) drafts a high-level, post-mortem summary and an updated release note describing the fix, which is linked directly to the closed Jira ticket.
+
+Closure: Once deployed and verified in production, the Triage Team Lead closes the ticket and notifies all stakeholders.

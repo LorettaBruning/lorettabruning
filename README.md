@@ -45,8 +45,8 @@ The SOPs available here provide a focus for process governance, clarity, and adh
 
     -[Run a Baseline in RDS](https://github.com/LorettaBruning/lorettabruning/blob/main/Run%20a%20Baseline%20in%20RDS) - Demonstates a step-by step functional instruction to run a baseline in RDS. 
 
-    -[Database Warehouse Custom Query SOP](
-    Demonstates a step-by-step functional instruction to create a Tableau data warehouse query. 
+    -[Database Warehouse Custom Query SOP](https://github.com/LorettaBruning/lorettabruning/blob/main/Database%20Warehouse%20Custom%20Query%20SOP) - Demonstates a step-by-step functional instruction to create a Tableau data warehouse query. 
+    
 ### Templates
 Loretta uses templates to save time and effort by reusuing a pre-designed structure that ensures consistency and brand uniformity. This improves the quality of documents, websites, and other outputs. Templates provide a standardized starting point with pre-set formatting and content. 
 
@@ -59,22 +59,3 @@ This section demonstrates Loretta's Documentation Skills to highlight her unders
 
     -[Data Dictionary](https://github.com/LorettaBruning/lorettabruning/blob/main/Data%20Dictionary.xlsx)
  
-###   Markdown File
-####  Generic REST API Reference Page
-**Focus:** Documenting software architecture, JSON structure, and error handling.
-
-**Context:** Reference guide for a fictional public-facing API. Showcases the ability to read code snippets and structure technical references concisely.
-
-View Sample (Live/Screenshot) →
-Sample 3: Release Notes & Version Control
-**Focus:** Distillation of complex changes, managing version history, and user communication.
-
-**Context:** A set of Major and Minor release notes, showing distinction between user-facing features and internal bug fixes. Highlights **Agile/SCRUM** familiarity.
-
-View Sample (PDF/Link) →
-Sample 4: 508 Accessibility Guide
-**Focus:** Federal compliance, explaining complex rules (WCAG/508), and instructional design.
-
-**Context:** Briefing document explaining proper heading hierarchy, alt-text usage, and color contrast requirements for technical manuals.
-
-

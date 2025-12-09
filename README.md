@@ -50,12 +50,16 @@ The SOPs available here provide a focus for process governance, clarity, and adh
 ### Templates
 Loretta uses templates to save time and effort by reusuing a pre-designed structure that ensures consistency and brand uniformity. This improves the quality of documents, websites, and other outputs. Templates provide a standardized starting point with pre-set formatting and content. 
 
-   -[System Integration Guide Template](https://github.com/LorettaBruning/lorettabruning/blob/main/System%20Integration%20Guide%20Template)
+   -[System Integration Guide Template](https://github.com/LorettaBruning/lorettabruning/blob/main/System%20Integration%20Guide%20Template) - Demonstrates a template for system integration. 
 
-   -[SGML Master Template](https://github.com/LorettaBruning/lorettabruning/blob/main/SGML%20Master%20Template.sgm)
+   -[SGML Master Template](https://github.com/LorettaBruning/lorettabruning/blob/main/SGML%20Master%20Template.sgm) - Demonstrates a template for SGML. 
 
 ###   Software Devlopment & Governance
 This section demonstrates Loretta's Documentation Skills to highlight her understanding of best practices in software development and data governance. This sections provides a well-organized data dictionary to show her **attention to detail** that indicates Loretta's thoroughness and professionalism. The artifacts found here show that Loretta does not just help document functional code, but she also documents for long-term maintanability and understanding. 
 
-   -[Data Dictionary](https://github.com/LorettaBruning/lorettabruning/blob/main/Data%20Dictionary.xlsx)
+   -[Data Dictionary](https://github.com/LorettaBruning/lorettabruning/blob/main/Data%20Dictionary.xlsx) - Demonstrates a collection of metadata such as object names, data type, size, classifcation, and relationships with other data elements.  
  
+###  Application Programming Interfaces (API)
+This section provides tangible examples of Loretta's understanding of API design and specifications to document APIs for building scalable software systems. 
+
+  -[Kafka Output RAML](https://github.com/LorettaBruning/lorettabruning/blob/main/kafkaOutput.raml) - Demonstrates the RESTful API Modeling Language (RAML) plain-text format of the output for Kafka Eventing. 

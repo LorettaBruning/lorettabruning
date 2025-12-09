@@ -1,0 +1,104 @@
+Data Warehouse Custom SQL Reporting Standard Operating Procedure
+
+Introduction
+
+Purpose: Data Warehouse Custom SQL Reporting document is to specify the steps a Tableau Developer must follow to create a Data Warehouse Query. 
+
+Scope
+Creating a custom Data Warehouse SQL allows Tableau to create the materialized view. 
+Tableau custom SQL module
+Tableau Desktop
+Tableau Server
+
+Assumptions
+The instructions in this document assume the end user is familiar with the following:
+Tableau Developer has necessary permissions. 
+Tableau Developer has knowledge of and experience with Tableau. 
+Tableau Developer knows how to build a SQL Query. 
+Data Warehouse Query	when starting a new “top” section it should start on the next page. 
+Prepare to Create Query 
+To prepare for creating a query:
+Find the report tab in the Accounting Reports - Source to Target Mapping document, shown in Exhibit 2-1. 
+
+
+Ensure all filters are removed. 
+Verify that all Data Warehouse Tables are visible. These tables are needed for the specific report.
+Select the drop-down from the DW Table, refer to Exhibit 2-2. 
+NOTE:	The Data Warehouse Tables are specific for each report. 
+All three pictures should remain on the same page for readability. Looking at the screenshot above and reading #2 doesn’t make sense.
+
+Exhibit 2-2: DW Table Drop-Down
+
+Create a unique list of these tables, as shown in Exhibit 2-3. 
+Exhibit 2-3: Sample Unique List
+
+Create Query
+Once the unique list is createdthat tables are determined, the developer will begin creating the query. 
+Begin building the SQL query from the dData wWarehouse. An example is shown in Exhibit 2-4. 
+NOTE:	Only include Columns from the Mapping Document. This ensures the report stays in compliance with Tableau Optimization recommendations. 
+Exhibit 2-4: Example SQL Query
+SELECT...
+FROM EMPWR_DW.FACT_ACCOUNTING_TRAN fat
+    INNER JOIN EMPWR_DW.DIM_ACCOUNTING_TRAN dat on fat.DIM_ACCOUNTING_TRAN_SKEY = dat.DIM_ACCOUNTING_TRAN_SKEY
+    INNER JOIN EMPWR_DW.DIM_ACNTG_TRAN_POST_DT pdt on fat.DIM_ACNTG_TRAN_POST_DT_KEY = pdt.DIM_ACNTG_TRAN_POST_DT_KEY
+    LEFT JOIN  EMPWR_DW.DIM_RECEIVABLE dr on fat.DIM_RECEIVABLE_SKEY = dr.DIM_RECEIVABLE_SKEY
+    INNER JOIN EMPWR_DW.DIM_RPT_GRP_TYPE rpt on fat.DIM_RPT_GRP_TYPE_SKEY = rpt.DIM_RPT_GRP_TYPE_SKEY
+    LEFT JOIN  EMPWR_DW.DIM_FINANCIAL_BUSINESS_TRAN dfbt on fat.DIM_FINANCIAL_BUSINESS_TRAN_SKEY = dfbt.DIM_FINANCIAL_BUSINESS_TRAN_SKEY
+    LEFT JOIN  EMPWR_DW.TBL_VA02_MSTR tbl on dfbt.FINCL_BUSNS_TRAN_ID = tbl.FINCL_BUSNS_TRAN_ID
+WHERE fat.POST_DT >= ADD_MONTHS(SYSDATE,-12)
+    AND dat.CREDIT_LEDGER_TYPE_CD = 'SGL'
+    AND dat.DEBIT_LEDGER_TYPE_CD = 'SGL'
+
+
+Apply filters to the query to limit data in the report. 
+NOTE:	Complex logic should be moved to the data warehouse and kept as a stored value. This minimizes processing by the Tableau query engine. 
+Build the WHERE clause like Exhibit 2-5. 
+Exhibit 2-5: Sample Where Clause
+WHERE fat.POST_DT >= ADD_MONTHS(SYSDATE,-12)
+    AND dat.CREDIT_LEDGER_TYPE_CD = 'SGL'
+    AND dat.DEBIT_LEDGER_TYPE_CD = 'SGL'
+Create Tableau Data Source
+Once the developer tests the query against the dData wWarehouse, the new report is ready to create. The developer will use the query in a Custom SQL module. 
+Create the Data Source (Tableau Server), refer to Exhibit 2-6. 
+Select New drop-down. 
+Select Published Data Source. 
+Exhibit 2-6: Publish Data Source
+
+Connect to the Data Warehouse in UAT-DEVL for development, refer to Exhibit 2-7. 
+Exhibit 2-7: Connect to Data Warehouse
+
+Select Oracle. 
+The Oracle Server dialog populates. The dialog displays the server, service, port, authentication, username, and password. Refer to Exhibit 2-8. 
+Exhibit 2-8: Oracle Server for UAT
+
+Copy and Paste the query in the Edit Custom SQL module, Exhibit 2-9. 
+Exhibit 2-9: Example Edit Custom SQL Module
+
+Make any changes/edits/formatting/name changes on the Scratchpad tab. 
+NOTE:	Changes/edits/formatting/name changes must be made BEFORE publishing the data model.
+Some formatting options are shown in Exhibit 2-10 and Exhibit 2-11. 
+Exhibit 2-10: Scratchpad Table Name
+
+Exhibit 2-11: Edit Scratchpad
+
+Once the query is complete, and any changes/edits/formatting were made on the Scratchpad tab, the extract is ready to publish the new data source. 
+Select Extract and publish the new data source. 
+NOTE:	The ‘extrct’ text is not necessary. 
+
+Exhibit 2-12: Example Custom SQL Extract
+
+The Tableau server displays the data source extract for the report, refer to Exhibit 2-13. The symbol circled depicts an extract.
+Exhibit 2-13: Extract Custom Data Source
+
+Tableau Report Development from Extract
+To enable a performant reporting architecture, Tableau best practices should be followed. 
+Use Context Filters - Tableau, refer to Exhibit 2-14. 
+Exhibit 2-14: Context Filters
+
+Filter the custom query to the last 12 months of data.
+Use the Workbook Optimizer, refer to Exhibit 2-15, and follow the recommendations in Exhibit 2-16. 
+Exhibit 2-15: Workbook Optimizer
+
+Exhibit 2-16: Optimize Workbook Best Practice Check
+
+Remove ALL unused values from the report query.

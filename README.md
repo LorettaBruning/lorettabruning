@@ -45,6 +45,11 @@ The SOPs available here provide a focus for process governance, clarity, and adh
 
 -[Run a Baseline in RDS](https://github.com/LorettaBruning/lorettabruning/blob/main/Run%20a%20Baseline%20in%20RDS) - Demonstates a step-by step clarity, workflow, and cross-functional instructions to run a baseline in RDS. 
 
+### Templates
+Templates allow writers like Loretta to save time and effort by reusuing a pre-designed structure that ensures consistency and brand uniformity. This improves the quality of documents, websites, and other outputs. Templates provide a standardized starting point with pre-set formatting and content. 
+
+- [System Integration Guide Template](https://github.com/LorettaBruning/lorettabruning/blob/main/System%20Integration%20Guide%20Template)
+
 ###   Markdown File
 ####  Generic REST API Reference Page
 **Focus:** Documenting software architecture, JSON structure, and error handling.

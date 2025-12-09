@@ -41,9 +41,9 @@ This section showcases samples of Loretta's work.
 ###  Standard Operating Procedure (SOP)
 The SOPs available here provide a focus for process governance, clarity, and adherence to internal styles. 
 
--[Log Critical Bug SOP](https://github.com/LorettaBruning/lorettabruning/blob/main/Log%20Critical%20Bug%20SOP) - Demonstrates a step-by-step clarity, workflow diagramming, and cross-functional instructions.
+-[Log Critical Bug SOP](https://github.com/LorettaBruning/lorettabruning/blob/main/Log%20Critical%20Bug%20SOP) - Demonstrates a step-by-step clarity, workflow, and cross-functional instructions to log a critical bug. 
 
--[Run a Baseline in RDS](
+-[Run a Baseline in RDS](https://github.com/LorettaBruning/lorettabruning/blob/main/Run%20a%20Baseline%20in%20RDS) - Demonstates a step-by step clarity, workflow, and cross-functional instructions to run a baseline in RDS. 
 
 ###   Markdown File
 ####  Generic REST API Reference Page

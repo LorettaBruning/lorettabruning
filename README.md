@@ -47,7 +47,7 @@ The SOPs available here provide a focus for process governance, clarity, and adh
 
    -[Database Warehouse Custom Query SOP](https://github.com/LorettaBruning/lorettabruning/blob/main/Database%20Warehouse%20Custom%20Query%20SOP) - Demonstates a step-by-step functional instruction to create a Tableau data warehouse query. 
 
-   -[Required Jira Fields, Comments, and POC SOP](https://github.com/LorettaBruning/lorettabruning/edit/main/Required%20Jira%20Fields%2C%20Comments%2C%20and%20POC%20SOP)
+   -[Required Jira Fields, Comments, and POC SOP](https://github.com/LorettaBruning/lorettabruning/edit/main/Required%20Jira%20Fields%2C%20Comments%2C%20and%20POC%20SOP) - Demonstrates a step-bystep functional instruction for Jira workflow process that includes fields, comments, and Point of Contact details for a Jira story.
     
 ### Templates
 Loretta uses templates to save time and effort by reusuing a pre-designed structure that ensures consistency and brand uniformity. This improves the quality of documents, websites, and other outputs. Templates provide a standardized starting point with pre-set formatting and content. 

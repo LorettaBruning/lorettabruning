@@ -1,0 +1,20 @@
+Required Jira Fields, Comments, and POC SOP
+
+Purpose
+
+The purpose of this document is to specificy the fields, comments, and Point of Contact information documented on a Jira ticket required to transition Jira stories. 
+
+Scope
+
+Atlassian provides Jira as a tool used to measure and track issues and project management. The team uses Jira to track updates and issues within the project. These Jira stories require comments, field changes, and POC information to move the Jira ticket through the workflow process. 
+
+Assumptions
+
+The descriptions outlined in this document assume the end user is familiar with the following:
+- User has access to the project's Jira board. 
+- User has permission to watch issues in Jira.
+
+Instructions
+
+The current life 
+The current life cycle for a Jira story follows a pattern found in Exhibit 5-1. A story is created in Jira. The user marks the story for elaboration, moves the story to “ready for review,” then to “AC ready for approval,” then to “sizing,” and finally “to “DEV” for development. At any point, the story can be moved to “in progress, “blocked,” and marked as “invalid” or “duplicate.” Only after “ready for DEV” can the story progress to “done.” 

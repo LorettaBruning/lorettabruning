@@ -1,0 +1,21 @@
+Mock API Jira Story Template
+
+As a <name of project> API, the API should administer basic input validation so invalid input is caught and reported to the user.
+The <name of business transaction API> should validate each of the require fields per transaction type.  
+The <name of business transaction API> should send an error response back to the customer IF “required” input fields are missing or malformed.
+The <name of business transaction API> should not proceed any further IF input validation errors are present.
+
+As a <name of project> API, the API should connect to the corporate database to invoke the Oracle procedures by the <name of business transaction API>. 
+The <name of business transaction API> should successfully connect to the corporate database and invoke Oracle procedure.
+The <name of business transaction API> should pass data to Oracle procedure so the Oracle procedure can process the request successfully.
+
+As a <name of project> API, the API should determine which Oracle procedure to invoke based on transaction type.
+The <name of business transaction API> determines which Oracle procedure to run based on the appropriate key/value pair in the JSON payload.
+The <name of business transaction API> accepts requests containing JSON object payload from the customer.
+
+As a <name of project> API, the API should provide a success or failure responses to the integrated system or interface on the backend processing so the integrated system or interface can determine if the request was a success or failure.
+The <name of business transaction API> should receive output from Oracle procedure and pass details back to the customer in a JSON object payload. This includes successful and failure responses.
+
+As a <name of project> API, the API should accept JWT authentication from the integrated system or interface so the <name of business transaction API> is able to verify the entity making the connection.
+The <name of business transaction API> should read and validate the JWT object and validate/accept the JWT contents.
+The <name of business transaction API> should allow or deny access according to the JWT verifications.

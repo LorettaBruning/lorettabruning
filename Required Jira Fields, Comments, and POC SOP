@@ -16,5 +16,51 @@ The descriptions outlined in this document assume the end user is familiar with 
 
 Instructions
 
-The current life 
-The current life cycle for a Jira story follows a pattern found in Exhibit 5-1. A story is created in Jira. The user marks the story for elaboration, moves the story to “ready for review,” then to “AC ready for approval,” then to “sizing,” and finally “to “DEV” for development. At any point, the story can be moved to “in progress, “blocked,” and marked as “invalid” or “duplicate.” Only after “ready for DEV” can the story progress to “done.” 
+The current life cycle for a Jira story begins when a Jira ticket is created. A user marks the story for "Elaboration," then moves the story to "Ready for Review." The story then progesses to "AC Ready for Approval," then to "Sizing," and finally to "DEV" for development. At any point, the Jira story can be moved to "In Progress," "Blocked," or marked as "Invalid" or "Duplicate." At any point in the process the story may also return to "In Story Elaboration." 
+NOTE: Only after "ready for DEV" does the Jira story progress to "Done." 
+To increase the effectiveness of the Agile Boards using Jira, three new requirements are added:
+1. Dev Point of Contact field required for new tickets.
+NOTE: The DEV POC designation eliminates the risk for miscommunication. One person is held accountable and responsible for the completion of the Jira story. A DEV POC allows the SCRUM Master or other Jira participant to have a POC associated to the story. 
+2. Required comments. 
+3. "Environment found in" field for bugs and defects. 
+
+The Jira story workflow follows this new process: 
+1. The story enters from the "Backlog."
+2. Business Analysts and Developers take the story for "Elaboration."
+3. The story is moved to "Ready for Review."
+4. The story is moved to "AC Ready for Approval."
+5. The story is moved to "Ready for Sizing."
+6. The story is moved to "Ready for DEV."
+7. The story is moved to "In Progress." 
+8. The story is moved to "In Code Review."
+    a. DEV is assigned as POC for the story. 
+        i. To update the DEV POC, the user follows these steps. 
+            1) Select "Configure Fields" in the top right of the Edit Issue dialog. 
+            2) Select the "Dev POC" as a custom field. 
+        ii. The DEV and ALL users attach comments to the story. 
+NOTE: Comments include simple text for updates, information pertaining to issues, snippets of code, images, and tables. Additionally, DEV comments include PR number and description of change. The descriptions should be meaningful and NOT something mundane as "updated permissions." 
+        iii. The story includes information for environment bugs and defects are found in. 
+NOTE: Bugs and defects may occur at any point during the Jira story's life cycle. 
+9. The story is moved to "Ready for QA."
+    a. The Quality Assurance checks the Jira story for updates, status changes, and examines for bugs and defects. 
+    b. The QA adds comments to the Jira story. These comments depend on the status change (e.g., "Ready for QA," Started Testing, etc.). 
+        i. Comments by status include
+            1) Started testing (Jira story moves from "Ready for QA" to "Testing.")
+            2) Found issues (Jira story moves from "Testing" to "In Progress.")
+            3) Blocked (Jira story moves from "Testing" to "Blocked.")
+            4) Testing complete, all tests pass (Jira story moves from "Testing" to "Done.")
+NOTE: If the unit test was successful, then the comment should read "Unit test done in Dev" or "Unit test passed in Dev."
+        ii. Comments for bugs and defects depend on the status change as follows:
+            1) Started testing (Jira story is moved from "Ready for QA" to Testing.)
+            2) Found issues (Jira story is moved from "Testing" to "In Progress.")
+            3) Blocked (Jira story is moved from "Testing" to "Blocked.")
+            4) Unblocked (Jira story is moved from "Blocked" to "Testing.")
+NOTE: Blocked and Unblocked changes include a reason for the status and fixes to the issue or reason why the issue is no longer blocked. 
+NOTE: For bugs and defects the description includes fixes applied, new solution, or new change. Add screen images. Fixes include if it is a partial fix or a full fix solution. Additionally, comments for bugs and defects will specify the environment the bug and defect were found in, because one environment may function smoothly while another has multiple errors. 
+NOTE: Comments describe what is testable and what is not testable. 
+NOTE: If a Dev finds a bug not reproducible or invalid, the DEV will NOT close the bug or mark it as "Invalid." The QA (or anyone elese that reported the bug) must agree with the DEV before the bug is marked "Invalid" or closed. 
+            5) Testing complete in <<SQA env>>, all tests pass (Jira story is moved from "Testing" to "Staged.")
+            6) Testing complete in <<IVV and UAT env>>, all tests pass (Jira story is moved from "Staged" to "Deployed to UAT.")
+10. The story is moved to "Testing."
+NOTE: After Testing the story may return to "Ready for DEV." 
+11. The story is moved to "Done."

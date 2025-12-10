@@ -56,6 +56,8 @@ Loretta uses templates to save time and effort by reusuing a pre-designed struct
 
    -[SGML Master Template](https://github.com/LorettaBruning/lorettabruning/blob/main/SGML%20Master%20Template.sgm) - Demonstrates a template for SGML. 
 
+   -[Mock API Jira Story Template](https://github.com/LorettaBruning/lorettabruning/blob/main/Mock%20API%20Jira%20Story%20Template) - Demonstrates a template for Jira stories.
+
 ###   Software Devlopment & Governance
 This section demonstrates Loretta's Documentation Skills to highlight her understanding of best practices in software development and data governance. This sections provides a well-organized data dictionary to show her **attention to detail** that indicates Loretta's thoroughness and professionalism. The artifacts found here show that Loretta does not just help document functional code, but she also documents for long-term maintanability and understanding. 
 

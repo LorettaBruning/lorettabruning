@@ -63,9 +63,9 @@ Loretta uses templates to save time and effort by reusuing a pre-designed struct
 ###   Software Devlopment & Governance
 This section demonstrates Loretta's Documentation Skills to highlight her understanding of best practices in software development and data governance. This sections provides a well-organized data dictionary to show her **attention to detail** that indicates Loretta's thoroughness and professionalism. The artifacts found here show that Loretta does not just help document functional code, but she also documents for long-term maintanability and understanding. 
 
-   -[Data Dictionary](https://github.com/LorettaBruning/lorettabruning/blob/main/Data%20Dictionary.xlsx) - Demonstrates a collection of metadata such as object names, data type, size, classifcation, and relationships with other data elements.  
- 
 ###  Application Programming Interfaces (API)
 This section provides tangible examples of Loretta's understanding of API design and specifications to document APIs for building scalable software systems. 
 
   -[Kafka Output RAML](https://github.com/LorettaBruning/lorettabruning/blob/main/kafkaOutput.raml) - Demonstrates the RESTful API Modeling Language (RAML) plain-text format of the output for Kafka Eventing. 
+
+-[Sample API Document](https://github.com/LorettaBruning/lorettabruning/blob/main/LorettaBruning_SampleAPI.docx) - Provides a sample document that demonstrates my experience documenting transactional APIs, including request/response design, error handling, and system behavior.

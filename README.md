@@ -5,21 +5,19 @@
 ##  Professional Summary
 Loretta is a highly experienced Technical Writer and Program Delivery professional with 7+ years of specialized experience in **IT Technical Writing** and **Executive Communication** within high-compliance federal environments (DoD/VA). She has proven expertise in preparing and editing technical documents, ensuring clarity, accuracy, and adherence to rigourous standards for diverse audiences, including senior IT personnel and non-technical stakeholders. 
 
-Loretta has experience in synthesizing complex IT concepts (Agile, MuleSoft, Salesforce) into clear, compliant documentation (SOPs, User Guides, Release Notes). She has proven proficiency with the full documentation toolchain: **GitHub, Confluence, Jira, and S1000D/Arbortext**. She is ready to support cloud-based software development with rigorous QA and 508 accessibility standards.
+Loretta has experience in synthesizing complex IT concepts (Agile, MuleSoft, Salesforce) into clear, compliant documentation (SOPs, User Guides, Release Notes). She has proven proficiency with the full documentation toolchain: **GitHub, Confluence, Jira, and Arbortext**. She is ready to support cloud-based software development with rigorous QA and 508 accessibility standards.
 
 ##  Technical & Compliance Expertise
 Loretta has **Documentation & Content Tool** experience using Navy Publishing Application (NPA), PTC Arbortext SGML, Confluence, Jira, GitHub, Adobe Acrobat Pro, Microsoft Office (Word, PowerPoint, Excel, Teams, Outlook), and Electronic Publishing Software. 
 
 Loretta's **IT/Cyber Concepts** include IT Agile SCRUM solutions, Internal Network Layouts, and Security Protocols (TS/SCI readiness implied through experience in sensitive environments).
 
-Loretta focuses on **Compliance & Standards** that adheres to S1000D, 508 Compliance, NAVSEA, OIT, VA, in-house, NATO guides. Her demonstrated abilitiy allows her to adhere to strict DoD standards.
+Loretta focuses on **Compliance & Standards** that adheres to 508 Compliance, NAVSEA, OIT, VA, in-house, NATO guides. Her demonstrated abilitiy allows her to adhere to strict DoD standards.
 
 Loretta has experience documenting **Enterprise Systems** including Salesforce, MuleSoft, Oracle, and Tableau. 
  
  ###   Core Technical Experise
   Loretta core technical expertise includes the following: 
-  
-    -S1000D & PLM Tools
   
     -Agile/SCRUM Documentation
   

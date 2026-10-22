@@ -66,4 +66,4 @@ This section provides tangible examples of Loretta's understanding of API design
 
   -[Kafka Output RAML](https://github.com/LorettaBruning/lorettabruning/blob/main/kafkaOutput.raml) - Demonstrates the RESTful API Modeling Language (RAML) plain-text format of the output for Kafka Eventing. 
 
--[Sample API Document](https://github.com/LorettaBruning/lorettabruning/blob/main/LorettaBruning_SampleAPI.docx) - Provides a sample document that demonstrates my experience documenting transactional APIs, including request/response design, error handling, and system behavior.
+-[Sample API Document] - Provides a sample document that demonstrates my experience documenting transactional APIs, including request/response design, error handling, and system behavior.

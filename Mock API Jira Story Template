@@ -1,7 +1,7 @@
 Mock API Jira Story Template
 
 As a <name of project> API, the API should administer basic input validation so invalid input is caught and reported to the user.
-The <name of business transaction API> should validate each of the require fields per transaction type.  
+The <name of business transaction API> should validate each of the required fields per transaction type.  
 The <name of business transaction API> should send an error response back to the customer IF “required” input fields are missing or malformed.
 The <name of business transaction API> should not proceed any further IF input validation errors are present.
 
